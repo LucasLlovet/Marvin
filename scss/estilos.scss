@@ -1,10 +1,49 @@
 //variables
 
 $textcolor: black;
+$fondo: burlywood;
 
-h3{
+.h3{
     font: $textcolor;
+    background-color: $fondo;
+}
+
+//mapa
+$tituloprenda: (
+     color: pink,
     
+);
+
+h2{
+    font: map-get($map: $tituloprenda, $key: color);
+
+}
+
+//*@extend
+.loguito{
+    margin: 1% 33.33% 2% 33.33%;
+    width: 33.33%;
+    padding: 10px ;
+    border-radius: 30px;
+}
+
+/*Logo de la marca*/
+.logo{
+    @extend .loguito;
+}
+
+
+//mixin
+@mixin tamañoimagen(){
+    width: 250px;
+    height: 250px;
+    padding:10px; 
+    border-radius: 30px;
+}
+
+/*imagenes index*/
+.home1{
+ @include tamañoimagen();
 }
 
 
@@ -28,13 +67,6 @@ body{
   
    
    
-/*Logo de la marca*/
-    .logo{
-    margin: 1% 33.33% 2% 33.33%;
-    width: 33.33%;
-    padding: 10px ;
-    border-radius: 30px;
-}
 
  /*flex index*/
 
@@ -45,23 +77,15 @@ justify-content: center, space-between;
 align-items: baseline;
 height: 600px;
 margin: 30px;
-}
 
 .flex-index1{
     align-items:center;
     
+
+}
 }
 
 
-
-/*imagenes index*/
-.home1{
-    width: 250px;
-    height: 250px;
-    padding:10px; 
-    border-radius: 30px;
-    
-}
 
 
 /*Texto index*/
@@ -206,9 +230,7 @@ nav a{
     color:inherit;
     font-size:14px;
    
-    } 
-   
-    nav li{
+     nav li{
         margin-left: 10%;
         display:inline-block;
         width:8%;
@@ -219,11 +241,11 @@ nav a{
         text-align:center;
         color:rgb(23, 12, 0);
     
-        }
-
     nav li:hover{
     background-color:transparent;
     color:rgb(23, 12, 0);
+    }
+    }
     }
       
 /*Footer*/

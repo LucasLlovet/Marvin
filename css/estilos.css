@@ -1,6 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-h3 {
+.h3 {
   font: black;
+  background-color: burlywood;
+}
+
+h2 {
+  font: pink;
+}
+
+/*Logo de la marca*/
+.loguito, .logo {
+  margin: 1% 33.33% 2% 33.33%;
+  width: 33.33%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/*imagenes index*/
+.home1 {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 body {
@@ -17,14 +38,6 @@ body {
   padding: 0;
 }
 
-/*Logo de la marca*/
-.logo {
-  margin: 1% 33.33% 2% 33.33%;
-  width: 33.33%;
-  padding: 10px;
-  border-radius: 30px;
-}
-
 /*flex index*/
 .flex-index {
   display: flex;
@@ -34,17 +47,8 @@ body {
   height: 600px;
   margin: 30px;
 }
-
-.flex-index1 {
+.flex-index .flex-index1 {
   align-items: center;
-}
-
-/*imagenes index*/
-.home1 {
-  width: 350px;
-  height: 350px;
-  padding: 10px;
-  border-radius: 30px;
 }
 
 /*Texto index*/
@@ -172,8 +176,7 @@ nav a {
   color: inherit;
   font-size: 14px;
 }
-
-nav li {
+nav a nav li {
   margin-left: 10%;
   display: inline-block;
   width: 8%;
@@ -184,8 +187,7 @@ nav li {
   text-align: center;
   color: rgb(23, 12, 0);
 }
-
-nav li:hover {
+nav a nav li nav li:hover {
   background-color: transparent;
   color: rgb(23, 12, 0);
 }
