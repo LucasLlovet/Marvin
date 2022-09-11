@@ -31,6 +31,7 @@ body {
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
 
 * {
@@ -199,10 +200,10 @@ nav a nav li nav li:hover {
   color: rgb(255, 255, 255);
   padding: 20px 20px 0px 20px;
   background-size: cover;
-  background-position: center;
+ 
   font-family: "Bebas Neue", cursive;
   font-size: 18px;
   font-weight: lighter;
-  position: relative;
-  bottom: 0;
+  position:absolute;
+ 
 }/*# sourceMappingURL=estilos.css.map */
